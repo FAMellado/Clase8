@@ -15,7 +15,7 @@ body{
     width: 80%;
     height: 50px;
 
-    background-color: #ececec;
+    background-color: lightgray;
 
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    height: 200px;
+    height: 160px;
     width: 80%;
 
     padding-left: 10%;
@@ -82,6 +82,17 @@ body{
     font-weight: bolder;
 }
 
+.encabezado .categorias .cajasCats{
+    width: 120px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 .iconosyNavegacion{
@@ -106,11 +117,23 @@ body{
 
     justify-content: space-between;
     
-    background-color: #ececec;
+    background-color: lightgray;
+
+    
 
 }
 
-.imagenes img{
+.modulos .imagenes .textoModulo{
+
+    align-self: center;
+    display: flex;
+    position: absolute;
+    height: 160px;
+    width: 300px;
+    background-color: red;
+}
+
+.modulos .imagenes img{
     width: 300px;
     height: 160px;
 
@@ -118,6 +141,7 @@ body{
     align-items: center;
 
     padding: 15px 15px 15px 15px;
+
 }
 
 #img1{
@@ -151,10 +175,18 @@ body{
 }
 
 .footing{
+
+    display: flex;
+    flex-direction: column;
     position: relative;
+
+    height: 35%;
     width: 80%;
+
     padding-left: 10%;
     padding-right: 10%;
+
+    gap: 5%
 
 }
 
@@ -176,20 +208,36 @@ body{
     
 }
 
+.footing .links .categorias2 .cajasCats{
+    width: 120px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footing .banners img{
     width: 300px;
     height: 100px;
 }
 
 .footing .contacto {
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    
 }
 
 .footing .contacto .c1{
 
     display: flex;
     flex-direction: column;
+
+    text-overflow: wrap;
+    color: black;
 
 }
 .footing .contacto .c2{
@@ -199,4 +247,11 @@ body{
     
 }
 
-
+@keyframes rotar1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
